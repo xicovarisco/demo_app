@@ -19,19 +19,8 @@ group :assets do
   gem 'uglifier', '>= 1.2.3'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '2.0.2'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug'
+group :production do
+  gem 'pg', '0.12.2'
+end
